@@ -107,8 +107,8 @@
 		9FA4138D21F05D20001CBD30 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9FA4137A21F05B52001CBD30 /* HomeViewController.swift */,
 				9FA4137C21F05B52001CBD30 /* Home.storyboard */,
+				9FA4137A21F05B52001CBD30 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
