@@ -25,12 +25,36 @@
                                     <constraint firstAttribute="width" secondItem="EoO-gN-lnl" secondAttribute="height" multiplier="75:41" id="B53-PS-zM6"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djL-YG-7nf">
+                                <rect key="frame" x="204.5" y="329" width="66" height="46"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAction:" destination="BYZ-38-t0r" eventType="touchDown" id="RsS-ce-RYi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCS-Bo-oTa">
+                                <rect key="frame" x="104.5" y="329" width="66" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="25b-3l-4Bb"/>
+                                    <constraint firstAttribute="height" constant="46" id="pxD-BU-dP0"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchDown" id="0yz-t2-CoH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GCS-Bo-oTa" firstAttribute="height" secondItem="djL-YG-7nf" secondAttribute="height" id="0br-lB-Qou"/>
+                            <constraint firstItem="GCS-Bo-oTa" firstAttribute="width" secondItem="djL-YG-7nf" secondAttribute="width" id="BOl-Wc-q5h"/>
+                            <constraint firstItem="GCS-Bo-oTa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="GN9-ja-b5f"/>
+                            <constraint firstItem="djL-YG-7nf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="GwP-mc-nZK"/>
+                            <constraint firstItem="djL-YG-7nf" firstAttribute="centerY" secondItem="GCS-Bo-oTa" secondAttribute="centerY" id="LHc-xc-b2H"/>
                             <constraint firstItem="EoO-gN-lnl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V8O-EU-Xdf"/>
                             <constraint firstItem="EoO-gN-lnl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WEW-bW-MKw"/>
                             <constraint firstItem="EoO-gN-lnl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eef-eW-Ngo"/>
+                            <constraint firstItem="GCS-Bo-oTa" firstAttribute="top" secondItem="EoO-gN-lnl" secondAttribute="bottom" constant="40" id="vj6-NF-pY0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

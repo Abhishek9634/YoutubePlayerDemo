@@ -8,15 +8,31 @@
 
 import UIKit 
 
+struct DummyVideo {
+    static let HeMan = "7yeA7a0uS3A"
+    static let RollerCoaster = "8lsB-P8nGSM"
+}
+
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var ytPlayerView: YTPlayerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setupYoutubePlayer()
     }
 
-
+    private func setupYoutubePlayer() {
+        self.ytPlayerView.load(withVideoId: DummyVideo.RollerCoaster)
+    }
+    
+    @IBAction func playAction(_ sender: UIButton) {
+        self.ytPlayerView.playVideo()
+    }
+    
+    @IBAction func stopAction(_ sender: UIButton) {
+        self.ytPlayerView.stopVideo()
+    }
+    
 }
 
