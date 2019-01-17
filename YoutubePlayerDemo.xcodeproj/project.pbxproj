@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5215493738050E19E847C94C /* libPods-YoutubePlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D811DC2B10D976AE73CDCD6 /* libPods-YoutubePlayerDemo.a */; };
 		9FA4137921F05B52001CBD30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4137821F05B52001CBD30 /* AppDelegate.swift */; };
 		9FA4137B21F05B52001CBD30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4137A21F05B52001CBD30 /* ViewController.swift */; };
 		9FA4137E21F05B52001CBD30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4137C21F05B52001CBD30 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AD72F45F94A1660949FA503 /* Pods-YoutubePlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubePlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubePlayerDemo/Pods-YoutubePlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		33E7CA3BD481FB8392FB01D5 /* Pods-YoutubePlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubePlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubePlayerDemo/Pods-YoutubePlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3D811DC2B10D976AE73CDCD6 /* libPods-YoutubePlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YoutubePlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA4137521F05B52001CBD30 /* YoutubePlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubePlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA4137821F05B52001CBD30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA4137A21F05B52001CBD30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5215493738050E19E847C94C /* libPods-YoutubePlayerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D797D9423BBAD5060D7D340 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D811DC2B10D976AE73CDCD6 /* libPods-YoutubePlayerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FA4136C21F05B52001CBD30 = {
 			isa = PBXGroup;
 			children = (
 				9FA4137721F05B52001CBD30 /* YoutubePlayerDemo */,
 				9FA4137621F05B52001CBD30 /* Products */,
+				EA1AA9B3138B8E91E18F7968 /* Pods */,
+				7D797D9423BBAD5060D7D340 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = YoutubePlayerDemo;
 			sourceTree = "<group>";
 		};
+		EA1AA9B3138B8E91E18F7968 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AD72F45F94A1660949FA503 /* Pods-YoutubePlayerDemo.debug.xcconfig */,
+				33E7CA3BD481FB8392FB01D5 /* Pods-YoutubePlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FA4138721F05B53001CBD30 /* Build configuration list for PBXNativeTarget "YoutubePlayerDemo" */;
 			buildPhases = (
+				94FAA1076060438632D4B099 /* [CP] Check Pods Manifest.lock */,
 				9FA4137121F05B52001CBD30 /* Sources */,
 				9FA4137221F05B52001CBD30 /* Frameworks */,
 				9FA4137321F05B52001CBD30 /* Resources */,
+				1383D410B9B2710ADC0840FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1383D410B9B2710ADC0840FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YoutubePlayerDemo/Pods-YoutubePlayerDemo-resources.sh",
+				"${PODS_ROOT}/youtube-ios-player-helper/youtube-ios-player-helper/Assets.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YoutubePlayerDemo/Pods-YoutubePlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94FAA1076060438632D4B099 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoutubePlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FA4137121F05B52001CBD30 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		9FA4138821F05B53001CBD30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD72F45F94A1660949FA503 /* Pods-YoutubePlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		9FA4138921F05B53001CBD30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E7CA3BD481FB8392FB01D5 /* Pods-YoutubePlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
