@@ -6,13 +6,15 @@
 //  Copyright © 2019 Nickelfox. All rights reserved.
 //
 
-import UIKit
+import UIKit 
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var ytPlayerView: YTPlayerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 

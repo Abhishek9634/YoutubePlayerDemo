@@ -26,6 +26,7 @@
 		9FA4137F21F05B53001CBD30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA4138221F05B53001CBD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA4138421F05B53001CBD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA4138E21F05E33001CBD30 /* YoutubePlayerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		9FA4138C21F05C9D001CBD30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9FA4138E21F05E33001CBD30 /* YoutubePlayerDemo-Bridging-Header.h */,
 				9FA4137F21F05B53001CBD30 /* Assets.xcassets */,
 				9FA4138121F05B53001CBD30 /* LaunchScreen.storyboard */,
 				9FA4138421F05B53001CBD30 /* Info.plist */,
@@ -154,6 +156,7 @@
 				TargetAttributes = {
 					9FA4137421F05B52001CBD30 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -388,6 +391,7 @@
 			baseConfigurationReference = 1AD72F45F94A1660949FA503 /* Pods-YoutubePlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NY45473NT8;
 				INFOPLIST_FILE = YoutubePlayerDemo/Resources/Info.plist;
@@ -398,6 +402,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.testpush.YoutubePlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YoutubePlayerDemo/Resources/YoutubePlayerDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,6 +414,7 @@
 			baseConfigurationReference = 33E7CA3BD481FB8392FB01D5 /* Pods-YoutubePlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NY45473NT8;
 				INFOPLIST_FILE = YoutubePlayerDemo/Resources/Info.plist;
@@ -418,6 +425,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.testpush.YoutubePlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YoutubePlayerDemo/Resources/YoutubePlayerDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
